@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <title>Student Clubs!</title>
+
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        button {
+            background: azure;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<center>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">School Club Information</h1>
+
+    <div class="mb-3">
+        <label class="form-label">Select a Club</label>.  <!-- these are my clubs where i assign values for in the main.py file-->
+        <select class="form-select" id="club_selected">
+            <option value="0">Choose a Club!</option>
+            <option value="1">Marching Band Club</option>
+            <option value="2">Glee Club</option>
+            <option value="3">Dance Club</option>
+            <option value="4">Math Club</option>
+            <option value="5">Science Club</option>
+            <option value="6">Social Studies Club</option>
+            <option value="7">Communication Arts Club</option>
+            <option value="8">COCC Club</option>
+            <option value="9">Volleyball Varsity</option>
+            <option value="10">Social Studies Club</option>
+        </select>
+    </div>
+
+    <button class="btn btn-primary" py-click="club_info_stuff"> <!-- this is the button -->
+    Show Club Information
+    </button>
+
+    <div class="container1">
+        <div class="container2" id="info_output">
+            <p class="text-muted">Club details will appear here.</p> <!-- this is the place where the descriptions of each club will appear-->
+        </div>
+    </div>
+</div>
+
+<py-script src="main.py"></py-script>
+
+</center>
+
+</body>
+</html>
